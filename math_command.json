@@ -1,0 +1,40 @@
+{
+  "engine_metadata": {
+    "name": "Nova Math Extension",
+    "version": "1.0",
+    "prefix": "math",
+    "delimiter": ":",
+    "author": "Nova Developer",
+    "description": "Adds arithmetic and randomization powers to the Nova Engine."
+  },
+  "dictionary": {
+    "math:add": {
+      "parameters": ["value1 : value2 : storage_key"],
+      "description": "Adds two values. Values can be raw numbers or keys from the Drum."
+    },
+    "math:sub": {
+      "parameters": ["value1 : value2 : storage_key"],
+      "description": "Subtracts value2 from value1."
+    },
+    "math:mult": {
+      "parameters": ["value1 : value2 : storage_key"],
+      "description": "Multiplies two values."
+    },
+    "math:div": {
+      "parameters": ["value1 : value2 : storage_key"],
+      "description": "Divides value1 by value2."
+    },
+    "math:random": {
+      "parameters": ["min : max : storage_key"],
+      "description": "Generates a random whole number between min and max."
+    },
+    "math:round": {
+      "parameters": ["storage_key"],
+      "description": "Rounds the decimal number stored in the key to the nearest integer."
+    },
+    "math:absolute": {
+      "parameters": ["value : storage_key"],
+      "description": "Returns the positive version of a number (Absolute Value)."
+    }
+  }
+}
